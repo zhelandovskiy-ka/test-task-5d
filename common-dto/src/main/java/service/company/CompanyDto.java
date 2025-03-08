@@ -41,5 +41,4 @@ public class CompanyDto {
     public void setEmployeesList(List<Long> employeesList) {
         this.employeesList = employeesList;
     }
-
 }

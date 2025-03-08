@@ -13,16 +13,12 @@ import java.util.List;
 public class CompanyController {
     private final CompanyService companyService;
 
-    @Value("${spring.datasource.url}")
-    public  String url;
-
     public CompanyController(CompanyService companyService) {
         this.companyService = companyService;
     }
 
     @GetMapping
     public List<CompanyDto> getAllCompanies() {
-        System.out.println("url = " + url);
         return companyService.getAllCompanies();
     }
 
